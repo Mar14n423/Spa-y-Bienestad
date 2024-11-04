@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color:#7D6A63;
+    overflow-x: hidden; 
+}
+/*TODO LO QUE TIENE QUE VER CON EL HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 140vh; 
+    background: linear-gradient(rgba(5,7,12,0.45),rgba(5,7,12,0.45)),url(/img/spa-contacto.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 0; 
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    padding: 0 70px; 
+    box-sizing: border-box;
+}
+
+
+.social-container {
+    display: flex;
+    gap: 10px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px; 
+    height: 17px; 
+}
+
+.social-icon img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.title-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Caveat', 'Zeyada', cursive;
+    padding-left: 190px;
+}
+.appointment-container {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.appointment-button {
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.appointment-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.nav-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ddd;
+}
+.main-container {
+    margin-top: -280px; 
+    padding: 20px;
+    background-color: #A8D5BA;
+}
