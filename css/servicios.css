@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #7D6A63;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 140vh;
+    background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.45)), url(/img/spa-contacto.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ddd;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: none; /* Ocultar checkbox */
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        border-radius: 0 0 10px 10px;
+    }
+    #menu-toggle:checked ~ .nav-container .nav-menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 20;
+    }
+}
+.download-section {
+    background-color: #F7EFE1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 500px;
+    text-align: left;
+    background-color: #F7EFE1;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #6B705C;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #255946;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.google-play {
+    background-color: #A8D5BA;
+}
+
+.app-store {
+    background-color: #95c1a1;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.app-image {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    margin-bottom: 0;
+    justify-content: flex-end;
+}
+
+.app-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-bottom: -57px;
+}
+
+/* Ajustes responsivos generales */
+@media (max-width: 768px) {
+    .location-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .app-image img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}

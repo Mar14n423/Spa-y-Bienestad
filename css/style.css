@@ -20,6 +20,18 @@ body {
     .main-container {
         padding: 10px;
     }
+    .team-member {
+        max-width: 150px;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+    .arrow-decorative {
+        font-size: 60px;
+        right: 10px;
+    }
 }
 /*TODO LO QUE TIENE QUE VER CON EL HEADER*/
 header {
@@ -196,7 +208,7 @@ header {
 .main-container {
     margin-top: -280px; 
     padding: 20px;
-    background-color: #A8D5BA;
+    background-color: #F7EFE1;
 }
 /* Servicios */
 .services {
@@ -206,7 +218,7 @@ header {
     align-items: flex-start;
     margin-top: 150px;
     gap: 30px; 
-    background-color: #A8D5BA;
+    background-color: #F7EFE1;
 }
 .service-image {
     width: 250px;
@@ -216,7 +228,7 @@ header {
     margin-bottom: 20px;
 }
 .aromatherapy-service {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .service-item {
@@ -240,6 +252,53 @@ header {
     width: 24px;
     height: 24px;
 }
+.team{
+    background-color:#A8D5BA ;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.team-member {
+    flex: 1 1 150px; 
+    max-width: 200px; 
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block; 
+    margin: 0 auto 10px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+.arrow-decorative {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 80px;
+    color: #F7EFE1;
+    transform: translateY(-50%); 
+}
+
 /*footer*/
 .footer-container {
     background-color: #333;
