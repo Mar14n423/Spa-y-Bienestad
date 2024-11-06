@@ -111,6 +111,38 @@ header {
 .nav-menu li a:hover {
     color: #ddd;
 }
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .appointment-container {
+        order: 2; 
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .title-container {
+        order: 3; 
+        width: 100%;
+        margin-left: 0;
+        padding-left: 5px;
+        text-align: center;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center; 
+    }
+}
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -127,7 +159,6 @@ header {
     font-family: 'Archivo Black', sans-serif;
     margin-bottom: 10px;
 }
-/* Columna de información de contacto con fondo y color de texto */
 .contact-info {
     flex: 1;
     background-color: #E6F7F1;
@@ -135,8 +166,6 @@ header {
     padding: 20px;
     border-radius: 15px;
 }
-
-/* Estilos para los títulos y párrafos en la información de contacto */
 .contact-info h2 {
     font-size: 24px;
     color: #255946;
@@ -242,7 +271,6 @@ textarea.form-control {
 .btn-primary:hover {
     background-color: #D0E8F2;
 }
-/* Estilos de la Sección de Ubicaciones */
 .locations-section {
     background-color: #A8D5BA; 
     padding: 40px 20px;
@@ -326,8 +354,6 @@ textarea.form-control {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-
-/* Botones de descarga */
 .buttons {
     display: flex;
     gap: 10px;
@@ -447,12 +473,6 @@ textarea.form-control {
         display: none;
     }
 
-    .title-container {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 24px; 
-    }
 }
 @media (max-width: 480px) {
     .title-container {
