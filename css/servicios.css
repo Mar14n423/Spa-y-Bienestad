@@ -141,6 +141,14 @@ header {
         display: flex;
         justify-content: center; 
     }
+    .services-section {
+        gap: 15px;
+    }
+
+    .service-card {
+        flex-basis: 45%; 
+        max-width: 45%; 
+    }
 }
 .hero-content {
     position: relative;
@@ -344,5 +352,9 @@ header {
     }
 
 }
-
+@media (max-width: 480px) {
+    .services-section {
+        grid-template-columns: 1fr;
+    }
+}
 
