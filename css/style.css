@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
@@ -253,6 +253,7 @@ header {
     margin-top: 150px;
     gap: 30px; 
     background-color: #F7EFE1;
+    
 }
 .service-image {
     width: 250px;
@@ -440,6 +441,7 @@ header {
     }
     .services {
         flex-direction: row;
+        margin-top: 140px;
     }
     .service-item {
         order: 2;
@@ -449,5 +451,9 @@ header {
     .aromatherapy-service {
         order: 1;
     }
+    .header-container {
+        padding: 0 10px; 
+    }
+
 
 }
