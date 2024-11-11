@@ -41,7 +41,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     height: 140vh; 
-    background: linear-gradient(rgba(5,7,12,0.45),rgba(5,7,12,0.45)),url(/img/logo.jpg) no-repeat;
+    background: linear-gradient(rgba(5,7,12,0.45),rgba(5,7,12,0.45)),url(../img/logo.jpg) no-repeat;
     background-size: cover;
     color: #fff;
     padding: 0; 
